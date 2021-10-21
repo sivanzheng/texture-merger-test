@@ -8,19 +8,19 @@ import merger from 'texture-merger';
     const appEl = document.getElementById('app') as HTMLElement;
 
     let urls: string[] = [];
-    const cached = localStorage.getItem('blocks');
-    if (cached) {
-        urls = cached.split('$');
-    }
+    // const cached = localStorage.getItem('blocks');
+    // if (cached) {
+    //     urls = cached.split('$');
+    // }
     if (!urls.length) {
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 20; i++) {
             const width = randomInt(10, 50);
             const height = randomInt(10, 50);
             const color = randomColor();
             const block = generator(width, height, color);
             urls.push(block.canvas.toDataURL('image/png'))
         }
-        localStorage.setItem('blocks', urls.join('$'))
+        // localStorage.setItem('blocks', urls.join('$'))
     }
 
     const results = await merger(urls);
