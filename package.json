@@ -1,0 +1,19 @@
+{
+  "name": "texture-merger-test",
+  "version": "1.0.0",
+  "description": "test demo for texture-merger",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "tsc && webpack serve --config webpack.config.dev.js"
+  },
+  "author": "Sivan Zheng",
+  "license": "MIT",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.4.0",
+    "ts-loader": "^7.0.5",
+    "webpack": "^5.59.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "dependencies": {}
+}
