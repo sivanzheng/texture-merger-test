@@ -23,6 +23,7 @@ module.exports = {
   },
   plugins: [
 		new HTMLWebpackPlugin({
+      baseUrl: './',
 			template: path.resolve(__dirname, './index.html'),
 		})
 	],
